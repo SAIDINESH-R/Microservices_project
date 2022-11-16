@@ -1,0 +1,16 @@
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: false
+    service-url:
+      defaultZone: http://localhost:9091/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+server:
+  port: 9091
+spring:
+  application:
+    name: eurekaServer
